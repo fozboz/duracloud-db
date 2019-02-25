@@ -10,6 +10,7 @@ package org.duracloud.storage.domain;
 public enum StorageProviderType {
     AMAZON_S3("amazon-s3"),
     AMAZON_GLACIER("amazon-glacier"),
+    SWIFT_S3("swift-s3"),
     IRODS("irods"),
     CHRONOPOLIS("chronopolis"),
     UNKNOWN("unknown"),
@@ -24,12 +25,16 @@ public enum StorageProviderType {
     }
 
     public static StorageProviderType fromString(String pt) {
+        System.out.println("Running loop with: " + pt);
         for (StorageProviderType pType : values()) {
+            System.out.println("On ptype: " + pType);
             if (pType.text.equalsIgnoreCase(pt) ||
                 pType.name().equalsIgnoreCase(pt)) {
+                System.out.println("Match found! " + pType);
                 return pType;
             }
         }
+        System.out.println("No match found. Returning unknown.");
         return StorageProviderType.UNKNOWN;
     }
 
