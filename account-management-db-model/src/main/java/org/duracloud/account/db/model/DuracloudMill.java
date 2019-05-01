@@ -32,6 +32,10 @@ public class DuracloudMill extends BaseEntity {
     private String auditQueue;
     @Column(nullable = false)
     private String auditLogSpaceId;
+    @Column(nullable = false)
+    private String auditQueueType;
+    @Column(nullable = false)
+    private String auditQueueHost;
 
     public String getDbName() {
         return dbName;
@@ -87,6 +91,22 @@ public class DuracloudMill extends BaseEntity {
 
     public void setAuditLogSpaceId(String auditLogSpaceId) {
         this.auditLogSpaceId = auditLogSpaceId;
+    }
+
+    public String getAuditQueueType() {
+        return auditQueueType;
+    }
+
+    public void setAuditQueueType(String auditQueueType) {
+        this.auditQueueType = auditQueueType;
+    }
+
+    public String getAuditQueueHost() {
+        return auditQueueHost;
+    }
+
+    public void setAuditQueueHost(String auditQueueHost) {
+        this.auditQueueHost = auditQueueHost;
     }
 
 }
