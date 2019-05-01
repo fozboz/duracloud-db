@@ -33,36 +33,109 @@ public class GlobalProperties extends BaseEntity {
     @Column(nullable = false)
     private String cloudFrontKeyPath;
 
+    @Column(nullable = false)
+    private String notifierType;
+
+    @Column(nullable = false)
+    private String rabbitmqHost;
+
+    @Column(nullable = false)
+    private String rabbitmqExchange;
+
+    @Column(nullable = false)
+    private String rabbitmqUsername;
+
+    @Column(nullable = false)
+    private String rabbitmqPassword;
+
     public String getInstanceNotificationTopicArn() {
+
         return instanceNotificationTopicArn;
     }
 
     public void setInstanceNotificationTopicArn(String instanceNotificationTopicArn) {
+
         this.instanceNotificationTopicArn = instanceNotificationTopicArn;
     }
 
     public String getCloudFrontAccountId() {
+
         return cloudFrontAccountId;
     }
 
     public void setCloudFrontAccountId(String cloudFrontAccountId) {
+
         this.cloudFrontAccountId = cloudFrontAccountId;
     }
 
     public String getCloudFrontKeyId() {
+
         return cloudFrontKeyId;
     }
 
     public void setCloudFrontKeyId(String cloudFrontKeyId) {
+
         this.cloudFrontKeyId = cloudFrontKeyId;
     }
 
     public String getCloudFrontKeyPath() {
+
         return cloudFrontKeyPath;
     }
 
     public void setCloudFrontKeyPath(String cloudFrontKeyPath) {
+
         this.cloudFrontKeyPath = cloudFrontKeyPath;
+    }
+
+    public String getNotifierType() {
+
+        return notifierType;
+    }
+
+    public void setNotifierType(String notifierType) {
+
+        this.notifierType = notifierType;
+    }
+
+    public String getRabbitmqHost() {
+
+        return rabbitmqHost;
+    }
+
+    public void setRabbitmqHost(String rabbitmqHost) {
+
+        this.rabbitmqHost = rabbitmqHost;
+    }
+
+    public String getRabbitmqExchange() {
+
+        return rabbitmqExchange;
+    }
+
+    public void setRabbitmqExchange(String rabbitmqExchange) {
+
+        this.rabbitmqExchange = rabbitmqExchange;
+    }
+
+    public String getRabbitmqUsername() {
+
+        return rabbitmqUsername;
+    }
+
+    public void setRabbitmqUsername(String rabbitmqUsername) {
+
+        this.rabbitmqUsername = rabbitmqUsername;
+    }
+
+    public String getRabbitmqPassword() {
+
+        return rabbitmqPassword;
+    }
+
+    public void setRabbitmqPassword(String rabbitmqPassword) {
+
+        this.rabbitmqPassword = rabbitmqPassword;
     }
 
 }
