@@ -35,7 +35,13 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String auditQueueType;
     @Column(nullable = false)
-    private String auditQueueHost;
+    private String rabbitmqHost;
+    @Column(nullable = false)
+    private String rabbitmqExchange;
+    @Column(nullable = false)
+    private String rabbitmqUsername;
+    @Column(nullable = false)
+    private String rabbitmqPassword;
 
     public String getDbName() {
         return dbName;
@@ -101,12 +107,24 @@ public class DuracloudMill extends BaseEntity {
         this.auditQueueType = auditQueueType;
     }
 
-    public String getAuditQueueHost() {
-        return auditQueueHost;
+    public String getRabbitmqHost() {
+        return rabbitmqHost;
     }
 
-    public void setAuditQueueHost(String auditQueueHost) {
-        this.auditQueueHost = auditQueueHost;
+    public void setRabbitmqHost(String rabbitmqHost) {
+        this.rabbitmqHost = rabbitmqHost;
     }
+
+    public String getRabbitmqExchange() { return rabbitmqExchange; }
+
+    public void setRabbitmqExchange(String rabbitmqExchange) { this.rabbitmqExchange = rabbitmqExchange; }
+
+    public String getRabbitmqUsername() { return rabbitmqUsername; }
+
+    public void setRabbitmqUsername(String rabbitmqUsername) { this.rabbitmqUsername = rabbitmqUsername; }
+
+    public String getRabbitmqPassword() { return rabbitmqPassword; }
+
+    public void setRabbitmqPassword(String rabbitmqPassword) { this.rabbitmqPassword = rabbitmqPassword; }
 
 }
