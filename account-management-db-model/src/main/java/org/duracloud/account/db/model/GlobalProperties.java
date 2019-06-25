@@ -80,7 +80,7 @@ public class GlobalProperties extends BaseEntity {
         this.cloudFrontKeyPath = cloudFrontKeyPath;
     }
 
-    public String notifierType() {
+    public String getNotifierType() {
         return notifierType;
     }
 
