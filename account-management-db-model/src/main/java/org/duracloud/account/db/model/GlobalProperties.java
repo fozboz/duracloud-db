@@ -84,7 +84,7 @@ public class GlobalProperties extends BaseEntity {
         return notifierType;
     }
 
-    public void setAuditQueueType(String notifierType) {
+    public void setNotifierType(String notifierType) {
         this.notifierType = notifierType;
     }
 
