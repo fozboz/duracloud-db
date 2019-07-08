@@ -44,87 +44,124 @@ public class DuracloudMill extends BaseEntity {
     private String rabbitmqPassword;
 
     public String getDbName() {
+
         return dbName;
     }
 
     public void setDbName(String dbName) {
+
         this.dbName = dbName;
     }
 
     public String getDbHost() {
+
         return dbHost;
     }
 
     public void setDbHost(String dbHost) {
+
         this.dbHost = dbHost;
     }
 
     public Integer getDbPort() {
+
         return dbPort;
     }
 
     public void setDbPort(Integer dbPort) {
+
         this.dbPort = dbPort;
     }
 
     public String getDbUsername() {
+
         return dbUsername;
+
     }
 
     public void setDbUsername(String dbUsername) {
+
         this.dbUsername = dbUsername;
     }
 
     public String getDbPassword() {
+
         return dbPassword;
     }
 
     public void setDbPassword(String dbPassword) {
+
         this.dbPassword = dbPassword;
     }
 
     public String getAuditQueue() {
+
         return auditQueue;
     }
 
     public void setAuditQueue(String auditQueue) {
+
         this.auditQueue = auditQueue;
     }
 
     public String getAuditLogSpaceId() {
+
         return auditLogSpaceId;
     }
 
     public void setAuditLogSpaceId(String auditLogSpaceId) {
+
         this.auditLogSpaceId = auditLogSpaceId;
     }
 
     public String getAuditQueueType() {
+
         return auditQueueType;
     }
 
     public void setAuditQueueType(String auditQueueType) {
+
         this.auditQueueType = auditQueueType;
     }
 
     public String getRabbitmqHost() {
+
         return rabbitmqHost;
     }
 
     public void setRabbitmqHost(String rabbitmqHost) {
+
         this.rabbitmqHost = rabbitmqHost;
     }
 
-    public String getRabbitmqExchange() { return rabbitmqExchange; }
+    public String getRabbitmqExchange() {
 
-    public void setRabbitmqExchange(String rabbitmqExchange) { this.rabbitmqExchange = rabbitmqExchange; }
+        return rabbitmqExchange;
+    }
 
-    public String getRabbitmqUsername() { return rabbitmqUsername; }
+    public void setRabbitmqExchange(String rabbitmqExchange) {
 
-    public void setRabbitmqUsername(String rabbitmqUsername) { this.rabbitmqUsername = rabbitmqUsername; }
+        this.rabbitmqExchange = rabbitmqExchange;
+    }
 
-    public String getRabbitmqPassword() { return rabbitmqPassword; }
+    public String getRabbitmqUsername() {
 
-    public void setRabbitmqPassword(String rabbitmqPassword) { this.rabbitmqPassword = rabbitmqPassword; }
+        return rabbitmqUsername;
+    }
+
+    public void setRabbitmqUsername(String rabbitmqUsername) {
+
+        this.rabbitmqUsername = rabbitmqUsername;
+    }
+
+    public String getRabbitmqPassword() {
+
+        return rabbitmqPassword;
+    }
+
+    public void setRabbitmqPassword(String rabbitmqPassword) {
+
+        this.rabbitmqPassword = rabbitmqPassword;
+    }
 
 }
