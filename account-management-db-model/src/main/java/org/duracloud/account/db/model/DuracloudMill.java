@@ -37,7 +37,11 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String rabbitMQHost;
     @Column(nullable = false)
-    private String rabbitMQExchange;
+    private Integer rabbitmqPort;
+    @Column(nullable = false)
+    private String rabbitmqVhost;
+    @Column(nullable = false)
+    private String rabbitmqExchange;
     @Column(nullable = false)
     private String rabbitMQUser;
     @Column(nullable = false)
@@ -132,6 +136,22 @@ public class DuracloudMill extends BaseEntity {
     public void setRabbitmqHost(String rabbitmqHost) {
 
         this.rabbitmqHost = rabbitmqHost;
+    }
+
+    public Integer getRabbitmqPort() {
+        return rabbitmqPort;
+    }
+
+    public void setRabbitmqPort(Integer rabbitmqPort) {
+        this.rabbitmqPort = rabbitmqPort;
+    }
+
+    public String getRabbitmqVhost() {
+        return rabbitmqVhost;
+    }
+
+    public void setRabbitmqVhost(String rabbitmqVhost) {
+        this.rabbitmqVhost = rabbitmqVhost;
     }
 
     public String getRabbitmqExchange() {
