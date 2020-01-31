@@ -35,7 +35,7 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String auditQueueType;
     @Column(nullable = false)
-    private String rabbitMQHost;
+    private String rabbitmqHost;
     @Column(nullable = false)
     private Integer rabbitmqPort;
     @Column(nullable = false)
@@ -43,9 +43,9 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String rabbitmqExchange;
     @Column(nullable = false)
-    private String rabbitMQUser;
+    private String rabbitmqUsername;
     @Column(nullable = false)
-    private String rabbitMQPassword;
+    private String rabbitmqPassword;
 
     public String getDbName() {
 
