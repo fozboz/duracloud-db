@@ -31,6 +31,8 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String auditQueue;
     @Column(nullable = false)
+    private String awsType;
+    @Column(nullable = false)
     private String auditLogSpaceId;
     @Column(nullable = false)
     private String auditQueueType;
@@ -46,6 +48,16 @@ public class DuracloudMill extends BaseEntity {
     private String rabbitmqUsername;
     @Column(nullable = false)
     private String rabbitmqPassword;
+    @Column(nullable = false)
+    private String awsAccessKey;
+    @Column(nullable = false)
+    private String awsSecretKey;
+    @Column(nullable = false)
+    private String awsRegion;
+    @Column(nullable = false)
+    private String awsEndpoint;
+    @Column(nullable = true)
+    private String awsSignerType;
 
     public String getDbName() {
 
@@ -106,6 +118,14 @@ public class DuracloudMill extends BaseEntity {
     public void setAuditQueue(String auditQueue) {
 
         this.auditQueue = auditQueue;
+    }
+
+    public String getAwsType() {
+        return awsType;
+    }
+
+    public void setAwsType(String awsType) {
+        this.awsType = awsType;
     }
 
     public String getAuditLogSpaceId() {
@@ -182,6 +202,46 @@ public class DuracloudMill extends BaseEntity {
     public void setRabbitmqPassword(String rabbitmqPassword) {
 
         this.rabbitmqPassword = rabbitmqPassword;
+    }
+
+    public String getAwsAccessKey() {
+        return awsAccessKey;
+    }
+
+    public void setAwsAccessKey(String awsAccessKey) {
+        this.awsAccessKey = awsAccessKey;
+    }
+
+    public String getAwsSecretKey() {
+        return awsSecretKey;
+    }
+
+    public void setAwsSecretKey(String awsSecretKey) {
+        this.awsSecretKey = awsSecretKey;
+    }
+
+    public String getAwsRegion() {
+        return awsRegion;
+    }
+
+    public void setAwsRegion(String awsRegion) {
+        this.awsRegion = awsRegion;
+    }
+
+    public String getAwsEndpoint() {
+        return awsEndpoint;
+    }
+
+    public void setAwsEndpoint(String awsEndpoint) {
+        this.awsEndpoint = awsEndpoint;
+    }
+
+    public String getAwsSignerType() {
+        return awsSignerType;
+    }
+
+    public void setAwsSignerType(String awsSignerType) {
+        this.awsSignerType = awsSignerType;
     }
 
 }
