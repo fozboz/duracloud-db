@@ -31,8 +31,6 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String auditQueue;
     @Column(nullable = false)
-    private String awsType;
-    @Column(nullable = false)
     private String auditLogSpaceId;
     @Column(nullable = false)
     private String auditQueueType;
@@ -53,11 +51,9 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String awsSecretKey;
     @Column(nullable = false)
-    private String awsRegion;
-    @Column(nullable = false)
-    private String awsEndpoint;
+    private String swiftEndpoint;
     @Column(nullable = true)
-    private String awsSignerType;
+    private String swiftSignerType;
 
     public String getDbName() {
 
@@ -118,14 +114,6 @@ public class DuracloudMill extends BaseEntity {
     public void setAuditQueue(String auditQueue) {
 
         this.auditQueue = auditQueue;
-    }
-
-    public String getAwsType() {
-        return awsType;
-    }
-
-    public void setAwsType(String awsType) {
-        this.awsType = awsType;
     }
 
     public String getAuditLogSpaceId() {
@@ -220,28 +208,20 @@ public class DuracloudMill extends BaseEntity {
         this.awsSecretKey = awsSecretKey;
     }
 
-    public String getAwsRegion() {
-        return awsRegion;
+    public String getSwiftEndpoint() {
+        return swiftEndpoint;
     }
 
-    public void setAwsRegion(String awsRegion) {
-        this.awsRegion = awsRegion;
+    public void setSwiftEndpoint(String swiftEndpoint) {
+        this.swiftEndpoint = swiftEndpoint;
     }
 
-    public String getAwsEndpoint() {
-        return awsEndpoint;
+    public String getSwiftSignerType() {
+        return swiftSignerType;
     }
 
-    public void setAwsEndpoint(String awsEndpoint) {
-        this.awsEndpoint = awsEndpoint;
-    }
-
-    public String getAwsSignerType() {
-        return awsSignerType;
-    }
-
-    public void setAwsSignerType(String awsSignerType) {
-        this.awsSignerType = awsSignerType;
+    public void setSwiftSignerType(String swiftSignerType) {
+        this.swiftSignerType = swiftSignerType;
     }
 
 }
