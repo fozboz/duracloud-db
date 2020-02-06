@@ -31,6 +31,8 @@ public class DuracloudMill extends BaseEntity {
     @Column(nullable = false)
     private String auditQueue;
     @Column(nullable = false)
+    private String s3Type;
+    @Column(nullable = false)
     private String auditLogSpaceId;
     @Column(nullable = false)
     private String auditQueueType;
@@ -101,6 +103,16 @@ public class DuracloudMill extends BaseEntity {
 
     public void setAuditQueue(String auditQueue) {
         this.auditQueue = auditQueue;
+    }
+
+    public String getS3Type() {
+
+        return s3Type;
+    }
+
+    public void setS3Type(String s3Type) {
+
+        this.s3Type = s3Type;
     }
 
     public String getAuditLogSpaceId() {
