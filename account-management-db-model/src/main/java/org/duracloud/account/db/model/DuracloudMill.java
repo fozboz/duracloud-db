@@ -30,7 +30,9 @@ public class DuracloudMill extends BaseEntity {
     private String dbPassword;
     @Column(nullable = false)
     private String auditQueue;
-    @Column(nullable = false)
+    // Must specify column name explicitly because the number
+    // breaks the auto parsing from field name
+    @Column(nullable = false, name = "s3_type")
     private String s3Type;
     @Column(nullable = false)
     private String auditLogSpaceId;
@@ -119,12 +121,10 @@ public class DuracloudMill extends BaseEntity {
     }
 
     public String getS3Type() {
-
         return s3Type;
     }
 
     public void setS3Type(String s3Type) {
-
         this.s3Type = s3Type;
     }
 
