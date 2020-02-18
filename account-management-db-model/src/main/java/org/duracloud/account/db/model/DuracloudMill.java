@@ -139,19 +139,19 @@ public class DuracloudMill extends BaseEntity {
     }
 
     public String getAuditQueueType() {
-       return auditQueueType;
+        return auditQueueType;
     }
 
     public void setAuditQueueType(String auditQueueType) {
-       this.auditQueueType = auditQueueType;
+        this.auditQueueType = auditQueueType;
     }
 
     public String getRabbitmqHost() {
-       return rabbitmqHost;
+        return rabbitmqHost;
     }
 
     public void setRabbitmqHost(String rabbitmqHost) {
-       this.rabbitmqHost = rabbitmqHost;
+        this.rabbitmqHost = rabbitmqHost;
     }
 
     public Integer getRabbitmqPort() {
@@ -171,27 +171,27 @@ public class DuracloudMill extends BaseEntity {
     }
 
     public String getRabbitmqExchange() {
-       return rabbitmqExchange;
+        return rabbitmqExchange;
     }
 
     public void setRabbitmqExchange(String rabbitmqExchange) {
-       this.rabbitmqExchange = rabbitmqExchange;
+        this.rabbitmqExchange = rabbitmqExchange;
     }
 
     public String getRabbitmqUsername() {
-       return rabbitmqUsername;
+        return rabbitmqUsername;
     }
 
     public void setRabbitmqUsername(String rabbitmqUsername) {
-       this.rabbitmqUsername = rabbitmqUsername;
+        this.rabbitmqUsername = rabbitmqUsername;
     }
 
     public String getRabbitmqPassword() {
-       return rabbitmqPassword;
+        return rabbitmqPassword;
     }
 
     public void setRabbitmqPassword(String rabbitmqPassword) {
-       this.rabbitmqPassword = rabbitmqPassword;
+        this.rabbitmqPassword = rabbitmqPassword;
     }
 
     public String getAwsAccessKey() {

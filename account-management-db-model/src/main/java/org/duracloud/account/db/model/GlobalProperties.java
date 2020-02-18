@@ -95,55 +95,55 @@ public class GlobalProperties extends BaseEntity {
     }
 
     public String getNotifierType() {
-       return notifierType;
+        return notifierType;
     }
 
     public void setNotifierType(String notifierType) {
-       this.notifierType = notifierType;
+        this.notifierType = notifierType;
     }
 
     public String getRabbitmqHost() {
-       return rabbitmqHost;
+        return rabbitmqHost;
     }
 
     public void setRabbitmqHost(String rabbitmqHost) {
-       this.rabbitmqHost = rabbitmqHost;
+        this.rabbitmqHost = rabbitmqHost;
     }
 
     public Integer getRabbitmqPort() {
-       return rabbitmqPort;
+        return rabbitmqPort;
     }
 
     public void setRabbitmqPort(Integer rabbitmqPort) {
-       this.rabbitmqPort = rabbitmqPort;
+        this.rabbitmqPort = rabbitmqPort;
     }
 
     public String getRabbitmqVhost() {
-       return rabbitmqVhost;
+        return rabbitmqVhost;
     }
 
     public void setRabbitmqVhost(String rabbitmqVhost) {
-       this.rabbitmqVhost = rabbitmqVhost;
+        this.rabbitmqVhost = rabbitmqVhost;
     }
 
     public String getRabbitmqExchange() {
-       return rabbitmqExchange;
+        return rabbitmqExchange;
     }
 
     public void setRabbitmqExchange(String rabbitmqExchange) {
-       this.rabbitmqExchange = rabbitmqExchange;
+        this.rabbitmqExchange = rabbitmqExchange;
     }
 
     public String getRabbitmqUsername() {
-       return rabbitmqUsername;
+        return rabbitmqUsername;
     }
 
     public void setRabbitmqUsername(String rabbitmqUsername) {
-       this.rabbitmqUsername = rabbitmqUsername;
+        this.rabbitmqUsername = rabbitmqUsername;
     }
 
     public String getRabbitmqPassword() {
-       return rabbitmqPassword;
+        return rabbitmqPassword;
     }
 
     public void setRabbitmqPassword(String rabbitmqPassword) {
